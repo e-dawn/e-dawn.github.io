@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo github,">
+  <meta name="keywords" content="Hexo,github,">
 
 
 
@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="记录了本博客搭建的详细过程，为之后的学习做一个备份。 环境配置搭建环境：Windows 10 Github账号配置登录Github账号，在主页点击New repository新建一个仓库，仓库名格式为用户名.github.io。 接下来配置SSH密钥 点击头像，选择Settings，在SSH and GPG keys标签中点击New SSH key按钮，随便起一个名字，然后按以下步骤生成Key 打">
-<meta name="keywords" content="Hexo github">
+<meta name="description" content="记录了本博客搭建的详细过程，为之后的学习做一个备份。">
+<meta name="keywords" content="Hexo,github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo博客搭建笔记">
 <meta property="og:url" content="http://yoursite.com/2019/08/31/Hexo博客搭建笔记/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="记录了本博客搭建的详细过程，为之后的学习做一个备份。 环境配置搭建环境：Windows 10 Github账号配置登录Github账号，在主页点击New repository新建一个仓库，仓库名格式为用户名.github.io。 接下来配置SSH密钥 点击头像，选择Settings，在SSH and GPG keys标签中点击New SSH key按钮，随便起一个名字，然后按以下步骤生成Key 打">
+<meta property="og:site_name" content="Weast&#39;s Blog">
+<meta property="og:description" content="记录了本博客搭建的详细过程，为之后的学习做一个备份。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-31T14:04:06.000Z">
+<meta property="og:image" content="http://yoursite.com/2019/08/31/Hexo博客搭建笔记/1.png">
+<meta property="og:updated_time" content="2019-08-31T15:26:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客搭建笔记">
-<meta name="twitter:description" content="记录了本博客搭建的详细过程，为之后的学习做一个备份。 环境配置搭建环境：Windows 10 Github账号配置登录Github账号，在主页点击New repository新建一个仓库，仓库名格式为用户名.github.io。 接下来配置SSH密钥 点击头像，选择Settings，在SSH and GPG keys标签中点击New SSH key按钮，随便起一个名字，然后按以下步骤生成Key 打">
+<meta name="twitter:description" content="记录了本博客搭建的详细过程，为之后的学习做一个备份。">
+<meta name="twitter:image" content="http://yoursite.com/2019/08/31/Hexo博客搭建笔记/1.png">
 
 
 
@@ -126,7 +128,7 @@
 
 
 
-  <title>Hexo博客搭建笔记 | Hexo</title>
+  <title>Hexo博客搭建笔记 | Weast's Blog</title>
   
 
 
@@ -156,12 +158,12 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Weast's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">Welcome to my Blog!</p>
       
   </div>
 
@@ -242,7 +244,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Weast's Blog">
     </span>
 
     
@@ -278,12 +280,34 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-08-31T22:04:06+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-31T23:26:02+08:00">
                 2019-08-31
               </time>
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/博客/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -313,6 +337,7 @@
 
       
         <p>记录了本博客搭建的详细过程，为之后的学习做一个备份。</p>
+<a id="more"></a>
 <h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>搭建环境：Windows 10</p>
 <h3 id="Github账号配置"><a href="#Github账号配置" class="headerlink" title="Github账号配置"></a>Github账号配置</h3><p>登录Github账号，在主页点击<code>New repository</code>新建一个仓库，仓库名格式为<code>用户名.github.io</code>。</p>
 <p>接下来配置SSH密钥</p>
@@ -322,7 +347,7 @@
 
 <p>默认所有选项（直接一路enter），如果之前生成过密钥会有是否覆盖的提示<br>进入<code>C:\Users\(你的win用户名)\.ssh</code>文件夹把<code>id_rsa.pub</code>文件中内容复制到Key中，点击提交按钮。至此Github账号配置完毕。</p>
 <h3 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h3><h4 id="下载并安装"><a href="#下载并安装" class="headerlink" title="下载并安装"></a>下载并安装</h4><p>从<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git</a>官网下载安装包，使用默认选项安装。</p>
-<h4 id="绑定你的Github账号"><a href="#绑定你的Github账号" class="headerlink" title="绑定你的Github账号"></a>绑定你的Github账号</h4><p>从开始菜单中打开Git Bash，输入以下代码，代码中替换上你的用户名和密码</p>
+<h4 id="绑定你的Github账号"><a href="#绑定你的Github账号" class="headerlink" title="绑定你的Github账号"></a>绑定你的Github账号</h4><p>从开始菜单中打开Git Bash，输入以下代码，代码中替换上你的用户名和密码<br><img src="/2019/08/31/Hexo博客搭建笔记/1.png" alt></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"GitHub用户名"</span></span><br><span class="line">$ git config --global user.email <span class="string">"GitHub注册邮箱"</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="配置Node-js"><a href="#配置Node-js" class="headerlink" title="配置Node.js"></a>配置Node.js</h3><p>从<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>官网下载安装包，使用默认选项安装。</p>
@@ -349,10 +374,13 @@
 <h3 id="更新文章"><a href="#更新文章" class="headerlink" title="更新文章"></a>更新文章</h3><p>如果要新建文章，在博客根目录</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
-<p>然后 source 文件夹中会出现一个 My New Post.md 文件，就可以使用 Markdown 编辑器在该文件中撰写文章了。这里我使用在线编辑器<a href="https://www.mdeditor.com/" target="_blank" rel="noopener">mdeditor</a>。<br>写完文章后，执行</p>
+<p>然后 source 文件夹中会出现一个 My New Post.md 文件，也可以直接创建文件，内容格式如下</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World # 标题</span><br><span class="line">date: 2019/3/26 hh:mm:ss # 时间</span><br><span class="line">categories: # 分类</span><br><span class="line"><span class="bullet">- </span>Diary</span><br><span class="line">tags: # 标签</span><br><span class="line"><span class="bullet">- </span>PS3</span><br><span class="line"><span class="bullet">- </span>Games</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">摘要</span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">正文</span><br></pre></td></tr></table></figure>
+
+<p>之后就可以使用 Markdown 编辑器在该文件中撰写文章了。这里我使用在线编辑器<a href="https://www.mdeditor.com/" target="_blank" rel="noopener">mdeditor</a>。<br>写完文章后，执行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g	<span class="comment"># 生成页面</span></span><br><span class="line">$ hexo d	<span class="comment"># 启动服务器</span></span><br></pre></td></tr></table></figure>
 
-<p>即可生成新页面并更新到GitHub</p>
+<p>即可生成新页面并更新到GitHub，至此一个简单的Hexo搭建完成，可以通过更换主题来实现美化以及更多功能。</p>
 
       
     </div>
@@ -370,7 +398,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo-github/" rel="tag"># Hexo github</a>
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/github/" rel="tag"># github</a>
           
         </div>
       
@@ -475,13 +505,22 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
