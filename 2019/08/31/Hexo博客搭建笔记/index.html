@@ -42,9 +42,9 @@
     path: '',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
-      copy_button: 'Copiar',
-      copy_success: 'Copiado',
-      copy_failure: 'Copiar falló'
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
     },
     sidebarPadding: 40
   };
@@ -131,7 +131,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Cambiar a barra de navegación">
+    <div class="toggle" aria-label="Toggle navigation bar">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -145,12 +145,12 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Inicio</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archivo</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
 
   </li>
   </ul>
@@ -184,7 +184,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="E-dawn">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="A new Blog">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -200,16 +200,16 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Creado por: 2019-08-31 22:20:20 / Modificado por: 23:26:02" itemprop="dateCreated datePublished" datetime="2019-08-31T22:20:20+08:00">2019-08-31</time>
+              <time title="Created: 2019-08-31 22:20:20 / Modified: 23:26:02" itemprop="dateCreated datePublished" datetime="2019-08-31T22:20:20+08:00">2019-08-31</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">En</span>
+              <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/博客/" itemprop="url" rel="index">
                     <span itemprop="name">博客</span>
@@ -269,10 +269,11 @@
 <p>然后 source 文件夹中会出现一个 My New Post.md 文件，也可以直接创建文件，内容格式如下</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World # 标题</span><br><span class="line">date: 2019/3/26 hh:mm:ss # 时间</span><br><span class="line">categories: # 分类</span><br><span class="line"><span class="bullet">- </span>Diary</span><br><span class="line">tags: # 标签</span><br><span class="line"><span class="bullet">- </span>PS3</span><br><span class="line"><span class="bullet">- </span>Games</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">摘要</span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">正文</span><br></pre></td></tr></table></figure>
 
-<p>之后就可以使用 Markdown 编辑器在该文件中撰写文章了。这里我使用在线编辑器<a href="https://www.mdeditor.com/" target="_blank" rel="noopener">mdeditor</a>。<br>写完文章后，执行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g	<span class="comment"># 生成页面</span></span><br><span class="line">$ hexo d	<span class="comment"># 启动服务器</span></span><br></pre></td></tr></table></figure>
+<p>之后就可以使用 Markdown 编辑器在该文件中撰写文章了。这里我使用在线编辑器<a href="https://www.mdeditor.com/" target="_blank" rel="noopener">mdeditor</a>。</p>
+<p>下面是几个常用命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g	<span class="comment"># 生成页面</span></span><br><span class="line">$ hexo s	<span class="comment"># 启动本地服务器，修改后刷新页面自动更新</span></span><br><span class="line">$ hexo d    <span class="comment">#自动生成网站静态文件，并部署到设定的仓库。hexo deploy的缩写</span></span><br></pre></td></tr></table></figure>
 
-<p>即可生成新页面并更新到GitHub，至此一个简单的Hexo搭建完成，可以通过更换主题来实现美化以及更多功能。</p>
+<p>至此一个简单的Hexo搭建完成。<br>我们还可以通过使用主题来进一步提高我们博客的逼格。<br>这里我用的是<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">Next</a>主题。<br>主题安装非常简单，只需把文件保存到themes文件夹下，主题名的文件夹中，然后修改_config.yml文件中theme后面的值就可以完成配置。</p>
 
     </div>
 
@@ -330,10 +331,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Tabla de contenidos
+          Table of Contents
         </li>
         <li class="sidebar-nav-overview">
-          Inicio
+          Overview
         </li>
       </ul>
 
@@ -348,7 +349,7 @@
   <img class="site-author-image" itemprop="image" alt="E-dawn"
     src="/images/avatar.gif">
   <p class="site-author-name" itemprop="name">E-dawn</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">A new Blog</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -356,12 +357,12 @@
           <a href="/archives/">
         
           <span class="site-state-item-count">3</span>
-          <span class="site-state-item-name">entradas</span>
+          <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">categorías</span>
+        <span class="site-state-item-name">categories</span>
       </div>
       <div class="site-state-item site-state-tags">
         <span class="site-state-item-count">3</span>
@@ -395,10 +396,10 @@
   </span>
   <span class="author" itemprop="copyrightHolder">E-dawn</span>
 </div>
-  <div class="powered-by">Creado mediante <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Tema – <a href="https://muse.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.5.0
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.5.0
   </div>
 
         
